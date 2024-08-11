@@ -1,0 +1,101 @@
+1. 'number' + 3 + 3
+'number' + 3 = number3 конкатенация
+'number3' + 3 = number33 конкатенация
+Result = number33
+
+2. null + 3
+null превращается в number 0
+Rusult = 0+3=3
+
+3. 5 && "qwerty”
+&& возвращает правый операнд если левый правдивый. 5 = true
+Result = qwerty
+
+4. +'40' + +'2' + "hillel";
++'40' превращает строку  в число
++'2' аналогично
+40+2+hillel= 42hillel concatenation
+Result = 42hillel
+
+5. '10' - 5 === 6;
+=== строгое равенство 
+10-5 = 5
+5<6
+Result = false
+
+6. true + false
+true = 1
+true = 0
+1+0=1
+Result = 1
+
+7. '4px' - 3
+'4px' не можем превратить в число
+Result = NaN
+
+8. '4' - 3
+'4' превращается в число 4
+4-3=1
+Result = 1
+
+9. '6' + 3 ** 0;
+ 3 ** 0 возводит 3 в 0 степень, получаем 1
+’6’+1 = строка ‘6’ плюс число 1
+’6’+1 = 61 конкатенация
+Result = 61
+
+10. 12 / '6'
+строка '6' превращается в число 6.
+12 / 6 = 2.
+Result = 2
+
+11. '10' + (5 === 6);
+5 === 6 получаем false
+’10’ + false = 10false конкатенация
+
+12. null == '’
+null не равняется другому типу значений, кроме undefined
+Result = false
+
+13. 3 ** (9 / 3);
+9 / 3 = 3.
+3 ** 3 = 27
+Result = 27
+
+14. !!'false' == !!'true’
+"false" и "true" сами по себе являются просто строками
+Оба значения будут оцениваться сначала как истина, а затем будут отрицаться ! как ложь, а затем снова как истина
+!!'false' - превращает непустую строку 'false' в true
+!!'true' - превращает непустую строку 'true' в true
+true == true = true
+Result = true
+
+15. 0 || '0' && 1
+Операция && имеет более высокий приоритет, чем ||
+'0' && 1 — '0' не пустая строка, поэтому возвращается 1
+0 || 1=1
+Result = 1
+
+16. (+null == false) < 1;
++null преобразует null в 0.
+0 == false — true
+true < 1 – true превращается в 1. 1 < 1 = false
+Result = false
+
+17. false && true || true
+false && true = false (логическое И с false дает false).
+false || true=true (логическое ИЛИ с false и true дает true).
+Result = true
+
+18. false && (false || true)
+false || true=true
+false && true = false (логическое И с false дает false).
+Result = false
+
+19. (+null == false) < 1 ** 5
++null=0
+0 == false - true
+1**5=1
+true < 1 – true превращается в 1
+1 < 1 = false
+Result: false

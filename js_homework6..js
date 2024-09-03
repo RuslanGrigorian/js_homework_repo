@@ -42,7 +42,6 @@ const company = {
 };
 
 function findValueByKey(companyObj, companyName) {
-    // Перевіряємо, чи ім'я компанії збігається з шуканим
     if (companyObj.name === companyName) {
         return companyObj;
     }
